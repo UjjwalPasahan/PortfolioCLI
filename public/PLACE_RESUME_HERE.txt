@@ -1,0 +1,25 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                    RESUME PLACEMENT GUIDE                     ║
+╚═══════════════════════════════════════════════════════════════╝
+
+To add your resume to the portfolio:
+
+1. Place your resume PDF file in this directory (public/)
+2. Name it "resume.pdf" or any name you prefer
+3. Update the resumeUrl in lib/portfolioData.ts to match:
+
+   resumeUrl: '/resume.pdf',  // if you named it resume.pdf
+   or
+   resumeUrl: '/your-custom-name.pdf',
+
+The resume will be downloadable when users type the 'resume' or 'cv'
+command in the terminal.
+
+NOTE: This directory is served statically by Next.js, so any file you
+place here will be accessible at yourwebsite.com/filename
+
+Example:
+- public/resume.pdf → yourwebsite.com/resume.pdf
+- public/docs/cv.pdf → yourwebsite.com/docs/cv.pdf
+
+For testing, you can use a placeholder PDF or link to an external URL.
