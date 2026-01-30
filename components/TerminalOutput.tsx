@@ -5,7 +5,7 @@ import { OutputLine } from '@/types/terminal';
 
 interface TerminalOutputProps {
   output: OutputLine[];
-  outputRef: React.RefObject<HTMLDivElement>;
+  outputRef: React.RefObject<HTMLDivElement | null>;
 }
 
 const TerminalOutput: React.FC<TerminalOutputProps> = ({ output, outputRef }) => {
